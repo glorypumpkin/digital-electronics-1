@@ -20,11 +20,17 @@ begin
     --------------------------------------------------------
     p_t_ff_rst : process(clk)
     begin
-        if rising_edge(clk) then
+        
 
-        -- WRITE YOUR CODE HERE
+            if(rst = '1') then
+                s_q <= '0';
+            elsif (t = '0') then
+                s_q <= s_q;
+            else
+                s_q <= not s_q;
+            end if;  
 
-        end if;
+       
     end process p_t_ff_rst;
 
     -- Output ports are permanently connected to local signal
@@ -35,10 +41,11 @@ end architecture Behavioral;
 
 2. Screenshot with simulated time waveforms. Try to simulate both flip-flops in a single testbench with a maximum duration of 200 ns, including reset. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+  ![image](https://user-images.githubusercontent.com/99721956/159280438-e401039f-76c2-46b4-9673-7354726aacf0.png)
+
 
 ### Shift register
 
 1. Image of the shift register `top` level schematic. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components and internal signals!
 
-   ![your figure]()
+  ![image](https://user-images.githubusercontent.com/99721956/159285996-8999b34e-3a4e-430d-b19e-2ef619572729.png)
