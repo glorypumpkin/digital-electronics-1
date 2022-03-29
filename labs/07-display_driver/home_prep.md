@@ -1,3 +1,8 @@
+
+![image](photo_2022-03-23_19-14-30.jpg)
+![image](photo_2022-03-23_21-05-27.jpg)
+
+```javascript
 {
   signal:
   [
@@ -24,3 +29,4 @@
     text: '                    4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms',
   },
 }
+```
